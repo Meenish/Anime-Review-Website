@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anime Review Website</title>
+        <style>
+body{
+    margin:0;
+    font-family:'Times New Roman', Times, serif;
+    background: linear-gradient(to right,#1a1a2e,#16213e,#0f3460);
+    color:white;
+    text-align:center;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:20px;
+}
+
+h1{
+    color:yellow;
+    font-size:50px;
+    text-shadow:3px 3px 10px black;
+}
+
+h2{
+    color:#00ffff;
+}
+
+img{
+    width:300px;
+    border-radius:15px;
+    box-shadow:0px 0px 15px rgb(231, 9, 9);
+}
+
+.card{
+    background-color:rgba(255,255,255,0.1);
+    padding:20px;
+    margin:20px;
+    border-radius:20px;
+    box-shadow:0px 0px 15px black;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    transition:0.5s;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th,td{
+    border:1px solid white;
+    padding:10px;
+}
+
+th{
+    background:#ffcc00;
+    color:black;
+}
+
+form{
+    width:50%;
+    margin:auto;
+    padding:20px;
+    background:rgba(255,255,255,0.1);
+    border-radius:20px;
+}
+
+input,textarea,select{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:10px;
+    border:none;
+}
+
+input[type=submit]{
+    background:#ffcc00;
+    font-weight:bold;
+}
+
+input[type=submit]:hover{
+    background:orange;
+}
+</style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Anime Review Website</h1>
+            <p>Welcome to our Anime Review Website! Here you can find reviews and ratings for your favorite anime series. Feel free to explore and share your thoughts!</p>
+            <img src="D:\wallpaper\Background\542343.jpg" alt="Anime Image">
+            <p>One Piece is an epic adventure anime that follows Monkey D. Luffy, an enthusiastic young man whose body gained the properties of rubber after accidentally eating a mystical Devil Fruit. With his diverse crew of pirates, named the Straw Hat Pirates, Luffy explores the Grand Line in search of the world's ultimate treasure known as "One Piece" in order to become the next Pirate King.</p>
+                <h2>Top 3 Anime Series</h2>
+            <ul>
+                <li>One Piece</li>
+                <li>Naruto</li>
+                <li>Dragon Ball Z</li>
+            </ul>
+            <div class ="card">
+            <h2>Anime Reviews</h2>
+            <table>
+                    <tr>
+                        <th>Anime</th>
+                        <th>Rating</th>
+                    </tr>
+                    <tr>
+                        <td>One Piece</td>
+                        <td>9.5/10</td>
+                        </tr>
+                    <tr>
+                        <td>Naruto</td>
+                        <td>9.0/10</td>
+                    </tr>
+                    <tr>
+                        <td>Dragon Ball Z</td>
+                        <td>8.5/10</td>
+                    </tr>
+                </table>
+                </div>
+                <h2>Review Form</h2>
+                <form>
+                    <label for ="anime">Anime Name:</label>
+                    <input type ="text" id="anime" name="anime" required><br><br>
+                    <label for ="rating">Rating:</label>
+                    <select id="rating"name="rating"required>
+                        <option value="">Select a rating</option>
+                        <option value="10">10</option>
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select><br><br>
+                    <label for ="comments">Comments:</label>
+                    <textarea id="comments"name="comments"required row="5" col="50"></textarea><br>
+                    <input type="submit" value="Submit Review">
+                </form>
+        </div>
